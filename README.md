@@ -110,7 +110,23 @@ iusql allinone@global> \?
 
 Table
 
-.. image:: iusql_images/Table_Completion.png
+![Table_Completion](iusql_images/Table_Completion.png)
+
+Column
+
+![Column_Comletion](iusql_images/Column_Comletion.png)
+
+Alias
+
+![Alias_Column_Completion](iusql_images/Alias_Column_Completion.png)
+
+Autosuggestion
+
+![Autosuggestion](iusql_images/Autosuggestion.png)
+
+FuzzyMatch
+
+![FuzzyMatch](iusql_images/FuzzyMatch.png)
 
 
 
