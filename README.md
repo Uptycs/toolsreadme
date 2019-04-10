@@ -222,3 +222,74 @@ output.even-row = ""
 [favorite_queries]
 query_check = "select host_name, os from upt_assets"
 ```
+
+## Favorite Queries
+
+Saved Queries
+
+Favorite Queries are a way to save frequently used queries with a short name.
+```
+\f - list all favorite queries.
+
+\f <name> - Invoke a favorite query by its name.
+
+\fs <name> <query> - Save a new favorite query called ‘name’.
+
+\fd <name> - Delete an existing favorite query by its name.
+
+Examples:
+iusql allinone@global> \f                                                                                                                                                                                                  
++-------------+--------------------------------------+
+| Name        | Query                                |
++-------------+--------------------------------------+
+| query_check | select host_name, os from upt_assets |
++-------------+--------------------------------------+
+Time: 0.005s
+
+No favorite query: 
+Time: 0.000s
+
+ # Save a new favorite query.
+    
+iusql allinone@global> \fs limit_hosts SELECT host_name, os FROM upt_assets LIMIT $1  
+                   ->                                                                                                                                                                                                      
+Saved.
+Time: 0.004s
+
+# Run a favorite query.
+
+iusql allinone@global> \f limit_hosts 10                                                                                                                                                                                   
+> SELECT host_name, os FROM upt_assets LIMIT 10
++--------------------------------------------+------------------+
+| host_name                                  | os               |
++--------------------------------------------+------------------+
+| vibhors-macbook.local                      | Mac OS X         |
+| cenos7.c.perfect-entry-149521.internal     | CentOS Linux     |
+| allinone                                   | Ubuntu           |
+| instance-4.c.perfect-entry-149521.internal | CentOS           |
+| ip-172-31-84-85.ec2.internal               | Amazon Linux AMI |
++--------------------------------------------+------------------+
+Time: 1.456s
+iusql allinone@global> \f limit_hosts 1                                                                                                                                                                                    
+> SELECT host_name, os FROM upt_assets LIMIT 1
++-----------------------+----------+
+| host_name             | os       |
++-----------------------+----------+
+| vibhors-macbook.local | Mac OS X |
++-----------------------+----------+
+Time: 1.840s
+
+ # Delete a favorite query.
+iusql allinone@global> \fd limit_hosts
+limit_hosts: Deleted
+Time: 0.001s
+
+Positional Parameters
+
+Favorite queries support shell-style parameter substitution. Save your favorite query with parameters as placeholders (e.g. $1, $2, $3, etc.):
+
+\fs user_by_name select * from users where name = '$1'
+When you call a favorite query with parameters, just add the parameters after the query’s name. You can put quotes around arguments that include spaces.
+
+\f user_by_name "Skelly McDermott"
+```
