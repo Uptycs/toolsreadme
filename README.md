@@ -110,23 +110,23 @@ iusql allinone@global> \?
 
 ## Auto Completion
 
-Table
+### Table
 
 ![Table_Completion](iusql_images/Table_Completion.png)
 
-Column
+### Column
 
 ![Column_Comletion](iusql_images/Column_Comletion.png)
 
-Alias
+### Alias
 
 ![Alias_Column_Completion](iusql_images/Alias_Column_Completion.png)
 
-Autosuggestion
+### Autosuggestion
 
 ![Autosuggestion](iusql_images/Autosuggestion.png)
 
-FuzzyMatch
+### FuzzyMatch
 
 ![FuzzyMatch](iusql_images/FuzzyMatch.png)
 
