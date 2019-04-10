@@ -18,7 +18,7 @@ Download the API key from uptyc. Following are the steps for downloading API key
  4. Create and Dowload "User API key"
 
 ## Usage
-
+```
 $ iusql --help
 Usage: iusql [OPTIONS] [DATABASE]
 
@@ -45,7 +45,7 @@ Options:
   --domainsuffix TEXT     Uptycs Domain Suffix like .uptycs.io
   --nossl                 do not verify ssl certificate
   --help                  Show this message and exit.
-
+```
 
 A config file is automatically created at `~/.config/iusql/config` at first launch. See the file itself for a description of all available options.
 
@@ -225,9 +225,8 @@ query_check = "select host_name, os from upt_assets"
 
 ## Favorite Queries
 
-Saved Queries
-
 Favorite Queries are a way to save frequently used queries with a short name.
+
 ```
 \f - list all favorite queries.
 
