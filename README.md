@@ -10,6 +10,13 @@ You might need sudo on linux.
 ```
 $ pip install -U iusql
 ```
+
+Download the API key from uptyc. Following are the steps for downloading API key:
+ 1. Connect to you tenant using your username and password. Uptycs URL example: https://<tenant>.uptycs.io
+ 2. Got to configuration -> Users
+ 3. Go to your username click on Edit 
+ 4. Create and Dowload "User API key"
+
 ## Usage
 
 $ iusql --help
