@@ -40,3 +40,49 @@ Following are the steps for downloading API key:
 
 From above JSON, please note save the customerId, secret and Key.
 
+# Redash Connection to Uptycs
+
+## First setup of Redash
+
+![RedashSetup_Screen](redash_images/RedashSetup_Screen.png)
+
+## Connect to data source
+![Connect_to_data_source](redash_images/Connect_to_data_source.png)
+
+## Search Uptycs Data Source
+
+![Search_Uptycs_Data_Source](redash_images/Search_Uptycs_Data_Source.png)
+
+## Uptycs Data Source
+
+![Uptycs_Data_Source](redash_images/Uptycs_Data_Source.png)
+
+
+## Pass Uptycs information
+![Pass_Uptycs_Details](redash_images/Pass_Uptycs_Details.png)
+
+
+## Enter Uptycs information
+
+![Entered_Information](redash_images/Entered_Information.png)
+
+
+# Create a query
+
+![SELECT_QUERY](redash_images/SELECT_QUERY.png)
+
+## Execute query
+
+![Query_Board](redash_images/Query_Board.png)
+
+
+
+## Query pane details
+![Query_schema_structure](redash_images/Query_schema_structure.png)
+
+
+
+
+
+
+
