@@ -105,7 +105,7 @@ iusql allinone@global> \?
 +------------+----------------------------+------------------------------------------------------------+
 ```
 
-##Config File
+## Config File
 
 Iusql ships with sane defaults. These defaults are defined in a configuration file located under ~/.config/iusql/config.
 
