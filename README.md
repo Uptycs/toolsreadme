@@ -105,6 +105,14 @@ iusql allinone@global> \?
 +------------+----------------------------+------------------------------------------------------------+
 ```
 
+
+## Auto Completion
+
+Table
+
+.. usql_images/Table_Completion.png
+
+
 ## Config File
 
 Iusql ships with sane defaults. These defaults are defined in a configuration file located under ~/.config/iusql/config.
