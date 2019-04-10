@@ -110,7 +110,7 @@ iusql allinone@global> \?
 
 Table
 
-.. usql_images/Table_Completion.png
+.. image:: iusql_images/Table_Completion.png
 
 
 ## Config File
