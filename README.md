@@ -42,7 +42,7 @@ Options:
 
 A config file is automatically created at `~/.config/iusql/config` at first launch. See the file itself for a description of all available options.
 
-# Connect and execute a query
+## Connect and execute a query
 ```
 vibhors-macbook:authcode vibhorkumar$  iusql  -k allinone_apikey.json global
 Version: 2.0.2
@@ -65,7 +65,7 @@ iusql allinone@global> SELECT upt_hostname, upt_time, days, hours, minutes, seco
 +--------------------------------------------+-------------------------+------+-------+---------+---------+  
 ```
 
-# Other shortcuts and command line options
+## Other shortcuts and command line options
 ```
 iusql allinone@global> \?                                                                                                                                                                                                  
 +------------+----------------------------+------------------------------------------------------------+
