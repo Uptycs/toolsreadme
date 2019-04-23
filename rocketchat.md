@@ -1,8 +1,11 @@
 # Uptycs Rocket-Chat Integration for Alerts
 
-## Configure Rocket-Chat for Webhook URL and Token
+## Preview of Uptycs alert in Rocket Chat
 
 ![rocket_chatt](rocket_chatt/SS1.png)
+
+## Configure Rocket-Chat for Webhook URL and Token
+
 ![rocket_chatt](rocket_chatt/SS2.png)
 ![rocket_chatt](rocket_chatt/SS3.png)
 ![rocket_chatt](rocket_chatt/SS4.png)
