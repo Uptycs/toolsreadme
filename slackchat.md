@@ -3,9 +3,9 @@
 
 ## Configure Uptycs Alerts for Slack
 
-![rocket_chatt](rocket_chatt/SS8.png)
-![rocket_chatt](rocket_chatt/SS9.png)
-![rocket_chatt](rocket_chatt/SS10.png)
-![rocket_chatt](rocket_chatt/SS11.png)
-![rocket_chatt](rocket_chatt/SS12.png)
-![rocket_chatt](rocket_chatt/SS13.png)
+![slack](slack/SS8.png)
+![slack](slack/SS9.png)
+![slack](slack/SS10.png)
+![slack](slack/SS11.png)
+![slack](slack/SS12.png)
+![slack](slack/SS13.png)
