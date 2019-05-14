@@ -1,8 +1,5 @@
 # Uptycs Slack Chat Integration for Alerts
 
-## Preview of Uptycs alert in Rocket Chat
-
-![rocket_chatt](rocket_chatt/SS1.png)
 
 ## Configure Uptycs Alerts for Slack
 
