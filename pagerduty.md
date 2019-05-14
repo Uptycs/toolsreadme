@@ -1,4 +1,4 @@
-# Uptycs Slack Chat Integration for Alerts
+# Uptycs Pageduty Integration for Alerts
 
 
 ## Configure Uptycs Alerts for Slack
