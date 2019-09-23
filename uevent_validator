@@ -55,7 +55,7 @@ SELECT * FROM processes where cmdline like '%grep%' and pid = 14406 LIMIT 1;
 ```
 
 2. Sample Event JS script:
-```
+```sql
 const events = [];
 records.forEach(record => {
   const cmdline = record.columns['cmdline'];
@@ -81,7 +81,7 @@ records.forEach(record => {
 });
 
 return events;
-```
+```sql
 
 3. Execute using following command:
 ```
