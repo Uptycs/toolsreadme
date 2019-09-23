@@ -49,6 +49,8 @@ Options:
 
 ## Examples
 
+### Example-1
+
 1. Sample Query file: query_example.sql
 ```
 SELECT * FROM processes where cmdline like '%grep%' and pid = 14406 LIMIT 1;
@@ -179,4 +181,7 @@ Events
   }
 ]
 ```
-**Note** If there will be error will be printed on the screen
+**Note:** In case of error in Uptycs event JS, error will be printed on the scree.
+
+### Example-2: Using lookup table
+
