@@ -328,3 +328,5 @@ Events
 * Query file should contain SQL which can bring sample one row for testing purpose.
 * Its highly recommended that you should use upt_day in the query for faster access of the rows
 * Use LIMIT 1 at the end of the clause whenever possible
+* Always avoid using upt_* column names in the SQL. upt_* columns are added by the Uptycs. Endpoint table definition doesn't include the upt_* columns.
+* If you want to use counter in JS, please use upt_counter AS "counter" in SELECT.
