@@ -8,7 +8,7 @@ If you already know how to install npm packages, then you can install it via npm
 You might need sudo on linux.
 
 ```
-$ npm install uevent_validator --save
+$ npm install uevent_validate --save
 ```
 
 ## Download the API key from Uptyc. 
