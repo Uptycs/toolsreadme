@@ -324,3 +324,7 @@ Events
 ```
 
 ## Query file best practices
+
+* Query file should contain SQL which can bring sample one row for testing purpose.
+* Its highly recommended that you should use upt_day in the query for faster access of the rows
+* Use LIMIT 1 at the end of the clause whenever possible
