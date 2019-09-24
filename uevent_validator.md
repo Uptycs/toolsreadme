@@ -1,4 +1,4 @@
-# uevent_validator
+# uevent_validate
 A command-line client for validation of Uptycs JS events.
 
 ## Installation
