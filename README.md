@@ -1,4 +1,4 @@
-# IUSQL
+# usql
 A command-line client for Uptycs that has auto-completion and syntax highlighting.
 
 ## Installation
@@ -8,7 +8,7 @@ If you already know how to install python packages, then you can install it via 
 You might need sudo on linux.
 
 ```
-$ pip install -U iusql
+$ pip install -U usql
 ```
 
 ## Download the API key from uptyc. 
@@ -21,22 +21,22 @@ Following are the steps for downloading API key:
 
 ## Usage
 ```
-$ iusql --help
-Usage: iusql [OPTIONS] [DATABASE]
+$ usql --help
+Usage: usql [OPTIONS] [DATABASE]
 
   A Uptycs terminal client with auto-completion and syntax highlighting.
 
   Examples:
-    - iusql -k <uptycs keyfile> database
+    - usql -k <uptycs keyfile> database
 
       where database = [global|realtime|audit]
 
 Options:
-  -V, --version           Output iusql's version.
+  -V, --version           Output usql's version.
   -D, --database TEXT     Database to use.
   -R, --prompt TEXT       Prompt format (Default: "\d> ").
   -l, --logfile FILENAME  Log every query and its results to a file.
-  --iusqlrc PATH          Location of iusqlrc file.
+  --usqlrc PATH          Location of usqlrc file.
   --auto-vertical-output  Automatically switch to vertical output mode if the
                           result is wider than the terminal width.
   -t, --table             Display batch output in table format.
@@ -49,15 +49,15 @@ Options:
   --help                  Show this message and exit.
 ```
 
-A config file is automatically created at `~/.config/iusql/config` at first launch. See the file itself for a description of all available options.
+A config file is automatically created at `~/.config/usql/config` at first launch. See the file itself for a description of all available options.
 
 ## Connect and execute a query
 ```
-vibhors-macbook:authcode vibhorkumar$  iusql  -k allinone_apikey.json global
+vibhors-macbook:authcode vibhorkumar$  usql  -k allinone_apikey.json global
 Version: 2.0.2
 Uptycs Security Solution
 Uptysc Inc.
-iusql allinone@global> SELECT upt_hostname, upt_time, days, hours, minutes, seconds from uptime limit 10;                                                                                                                  
+usql allinone@global> SELECT upt_hostname, upt_time, days, hours, minutes, seconds from uptime limit 10;                                                                                                                  
 +--------------------------------------------+-------------------------+------+-------+---------+---------+
 | upt_hostname                               | upt_time                | days | hours | minutes | seconds |
 +--------------------------------------------+-------------------------+------+-------+---------+---------+
@@ -76,7 +76,7 @@ iusql allinone@global> SELECT upt_hostname, upt_time, days, hours, minutes, seco
 
 ## Other shortcuts and command line options
 ```
-iusql allinone@global> \?                                                                                                                                                                                                  
+usql allinone@global> \?                                                                                                                                                                                                  
 +------------+----------------------------+------------------------------------------------------------+
 | Command    | Shortcut                   | Description                                                |
 +------------+----------------------------+------------------------------------------------------------+
@@ -112,31 +112,31 @@ iusql allinone@global> \?
 
 ### Table
 
-![Table_Completion](iusql_images/Table_Completion.png)
+![Table_Completion](usql_images/Table_Completion.png)
 
 ### Column
 
-![Column_Comletion](iusql_images/Column_Comletion.png)
+![Column_Comletion](usql_images/Column_Comletion.png)
 
 ### Alias
 
-![Alias_Column_Completion](iusql_images/Alias_Column_Completion.png)
+![Alias_Column_Completion](usql_images/Alias_Column_Completion.png)
 
 ### Autosuggestion
 
-![Autosuggestion](iusql_images/Autosuggestion.png)
+![Autosuggestion](usql_images/Autosuggestion.png)
 
 ### FuzzyMatch
 
-![FuzzyMatch](iusql_images/FuzzyMatch.png)
+![FuzzyMatch](usql_images/FuzzyMatch.png)
 
 
 
 ## Config File
 
-Iusql ships with sane defaults. These defaults are defined in a configuration file located under ~/.config/iusql/config.
+usql ships with sane defaults. These defaults are defined in a configuration file located under ~/.config/usql/config.
 
-The config file is created when iusql is launched for the very first time. Updates to that file are NOT overwritten by subsequent launches of iusql or updating the version of iusql.
+The config file is created when usql is launched for the very first time. Updates to that file are NOT overwritten by subsequent launches of usql or updating the version of usql.
 ```
 [main]
 
@@ -152,8 +152,8 @@ multi_line = True
 destructive_warning = True
 
 # log_file location.
-# In Unix/Linux: ~/.config/iusql/log
-# In Windows: %USERPROFILE%\AppData\Local\dbcli\iusql\log
+# In Unix/Linux: ~/.config/usql/log
+# In Windows: %USERPROFILE%\AppData\Local\dbcli\usql\log
 # %USERPROFILE% is typically C:\Users\{username}
 log_file = default
 
@@ -163,7 +163,7 @@ log_level = DEBUG
 
 # Log every query and its results to a file. Enable this by uncommenting the
 # line below.
-# audit_log = ~/.iusql-audit.log
+# audit_log = ~/.usql-audit.log
 
 # Default pager.
 # By default '$PAGER' environment variable is used
@@ -191,9 +191,9 @@ key_bindings = vi
 # Enabling this option will show the suggestions in a wider menu. Thus more items are suggested.
 wider_completion_menu = False
 
-# iusql prompt
+# usql prompt
 # \U - domain or customer_name
-# \t - tool name (iusql)
+# \t - tool name (usql)
 # \D - The full current date
 # \d - Database name
 # \m - Minutes of the current time
@@ -264,7 +264,7 @@ Favorite Queries are a way to save frequently used queries with a short name.
 \fd <name> - Delete an existing favorite query by its name.
 
 Examples:
-iusql allinone@global> \f                                                                                                                                                                                                  
+usql allinone@global> \f                                                                                                                                                                                                  
 +-------------+--------------------------------------+
 | Name        | Query                                |
 +-------------+--------------------------------------+
@@ -277,14 +277,14 @@ Time: 0.000s
 
  # Save a new favorite query.
     
-iusql allinone@global> \fs limit_hosts SELECT host_name, os FROM upt_assets LIMIT $1  
+usql allinone@global> \fs limit_hosts SELECT host_name, os FROM upt_assets LIMIT $1  
                    ->                                                                                                                                                                                                      
 Saved.
 Time: 0.004s
 
 # Run a favorite query.
 
-iusql allinone@global> \f limit_hosts 10                                                                                                                                                                                   
+usql allinone@global> \f limit_hosts 10                                                                                                                                                                                   
 > SELECT host_name, os FROM upt_assets LIMIT 10
 +--------------------------------------------+------------------+
 | host_name                                  | os               |
@@ -296,7 +296,7 @@ iusql allinone@global> \f limit_hosts 10
 | ip-172-31-84-85.ec2.internal               | Amazon Linux AMI |
 +--------------------------------------------+------------------+
 Time: 1.456s
-iusql allinone@global> \f limit_hosts 1                                                                                                                                                                                    
+usql allinone@global> \f limit_hosts 1                                                                                                                                                                                    
 > SELECT host_name, os FROM upt_assets LIMIT 1
 +-----------------------+----------+
 | host_name             | os       |
@@ -306,7 +306,7 @@ iusql allinone@global> \f limit_hosts 1
 Time: 1.840s
 
  # Delete a favorite query.
-iusql allinone@global> \fd limit_hosts
+usql allinone@global> \fd limit_hosts
 limit_hosts: Deleted
 Time: 0.001s
 
