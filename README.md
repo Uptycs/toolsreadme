@@ -112,23 +112,23 @@ usql allinone@global> \?
 
 ### Table
 
-![Table_Completion](usql_images/Table_Completion.png)
+![Table_Completion](iusql_images/Table_Completion.png)
 
 ### Column
 
-![Column_Comletion](usql_images/Column_Comletion.png)
+![Column_Comletion](iusql_images/Column_Comletion.png)
 
 ### Alias
 
-![Alias_Column_Completion](usql_images/Alias_Column_Completion.png)
+![Alias_Column_Completion](iusql_images/Alias_Column_Completion.png)
 
 ### Autosuggestion
 
-![Autosuggestion](usql_images/Autosuggestion.png)
+![Autosuggestion](iusql_images/Autosuggestion.png)
 
 ### FuzzyMatch
 
-![FuzzyMatch](usql_images/FuzzyMatch.png)
+![FuzzyMatch](iusql_images/FuzzyMatch.png)
 
 
 
