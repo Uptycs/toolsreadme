@@ -11,7 +11,7 @@ You might need sudo on linux.
 $ npm install uevent_validate --save
 ```
 
-## Download the API key from Uptyc. 
+## Download the API key from Uptycs. 
 
 Following are the steps for downloading API key:
  1. Connect to you tenant using your username and password. Uptycs URL example: https://tenantname.uptycs.io
